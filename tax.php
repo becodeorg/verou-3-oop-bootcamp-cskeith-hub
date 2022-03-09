@@ -1,11 +1,22 @@
 <?php
 
-$totalPrice = 0;
+require('fruit.php');
+
 $tax = 0;
+$totalPrice = 0;
 
-function tax() {
 
-}
+$totalPrice = $banana['pieces']* $banana['cost'];
+
+$tax = $banana['tax'] * $totalPrice;
+
+$priceWithTax = $totalPrice + $tax;
+
+
+    
+  
+
+
 
 
 
